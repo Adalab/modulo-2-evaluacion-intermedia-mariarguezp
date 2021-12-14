@@ -9,30 +9,39 @@ function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
 }
 
-function displayMessage() {
+function getUserValue() {
     const userValue = userSelection.value;
     console.log(`Tu movimiento es: ` + userValue);
+    return userValue;
     
 }
 
-function changePoints() {
+function getComputerValue() {
     const randomNumber = getRandomNumber(10);
+    let computerValue = '';
 
     if (randomNumber < 3) {
-        let computerValue = 'Piedra';
+        computerValue = 'Piedra';
     } else if (randomNumber >= 6) {
-        let computerValue = 'Papel';
+        computerValue = 'Papel';
     } else if (randomNumber > 6) {
-        let computerValue = 'Tijera';
+        computerValue = 'Tijera';
     }
 
     console.log(`El movimiento de la computadora es: ` + computerValue);
+
+    return computerValue;
+}
+
+function compareValues() {
+    if (userValue === 'Piedra' && computerValue === '')
+
 }
 
 function handleClickPlay(event) {
     event.preventDefault();
-    displayMessage()
-    changePoints()
+    getUserValue()
+    getComputerValue()
 }
 
 //Listeners

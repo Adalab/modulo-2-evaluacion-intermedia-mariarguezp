@@ -18,13 +18,13 @@ function getUserValue() {
 
 function getComputerValue() {
     const randomNumber = getRandomNumber(10);
-    let computerValue = '';
+    let computerValue;
 
     if (randomNumber < 3) {
         computerValue = 'Piedra';
     } else if (randomNumber >= 6) {
         computerValue = 'Papel';
-    } else if (randomNumber > 6) {
+    } else {
         computerValue = 'Tijera';
     }
 
@@ -34,7 +34,9 @@ function getComputerValue() {
 }
 
 function compareValues() {
-    if (userValue === 'Piedra' && computerValue === '')
+    if (userValue === 'Piedra' && computerValue === 'Piedra') {
+        console.log(`Habéis empatado`);
+    }
 
 }
 

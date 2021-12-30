@@ -114,6 +114,7 @@ function handleClickRestart(event) {
     resultText.innerHTML = '¡Vamos a jugar!';
     userCounter.innerHTML = userScore;
     computerCounter.innerHTML = computerScore;
+    console.clear();
 }
 
 //Eventos

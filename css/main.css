@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: snow;
+    color: #696969;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.form__title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.select {
+    background-color: white;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px gainsboro solid;
+    border-radius: 5px;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button {
+    width: 70px;
+    height: 30px;
+    margin-left: 15px;
+    background-color: darksalmon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(67, 41, 70, 0.185);
+    cursor: pointer;
+}
+
+.reset__button {
+    padding: 0 10px;
+    background-color: cadetblue;
+}
+
+.text {
+    padding: 5px 10px;
+    border: 2px darksalmon solid;
+    background-color: snow;
+    border-radius: 5px;
+    color: darksalmon;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.lastResult {
+    border: 2px cadetblue solid;
+    color: cadetblue;
+}
+
+.list__item {
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
